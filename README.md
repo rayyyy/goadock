@@ -18,21 +18,22 @@ docker-compose version 1.22.0, build f46880f
 
 ## 使い方
 
-### .envについて
-mysqlのパスワードは.envに定義します。
-```
-cp .env.example .enc
-```
-をして、設定を変えてください。
-
-
 ### 起動
 Makefileを利用して、コマンドを簡略化してます。
 ```
 git clone https://github.com/rayyyy/goadock
+cd goadock
+cp .env.example .env
 make up
 make exec # コンテナの中に入るためのコマンド
 ```
+
+### .envについて
+mysqlのパスワードは.envに定義します。
+```
+cp .env.example .env
+```
+をして、設定を変えてください。
 
 ### VS Code
 本環境はVS Codeを使うこと前提で作っております。
