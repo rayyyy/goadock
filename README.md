@@ -45,3 +45,7 @@ cp .env.example .env
 goaがある程度完成したら実行環境を作るってもいいかもしれません。
 dockerのmulti-stage機能を使います。
 ここはまた追記します。
+
+## go/src/goa_apiのMakefileについて
+rootのMakefileは主にdockerコンテナを操作するものです。
+go/src/goa_apiのMakefileはgoaの操作や、migrateの操作に使います。
