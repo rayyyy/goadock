@@ -1,0 +1,9 @@
+# goa
+/go/pkg/
+/go/src/goa_api/vendor/
+
+# mysql 永続化データ
+/mysql/mysql/
+
+# dockerの環境変数
+.env
