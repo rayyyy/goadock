@@ -9,7 +9,7 @@ up:
 	docker-compose up -d --build
 
 exec:
-	docker exec -it goadock_app_dev_1 bash
+	docker-compose exec app_dev bash
 
 ps:
 	docker ps -a && echo "\n"
